@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Twitter, YouTube, RoomOutlined, Phone, Mail } from "@mui/icons-material";
 import styled from "styled-components";
 import { Payment } from "../../assets";
+import { mobile } from "../../responsive";
 
 const Container = styled.footer`
     display: flex;
@@ -8,6 +9,7 @@ const Container = styled.footer`
     justify-content: space-between;
     flex-wrap: wrap;
     height: 40vh;
+    ${mobile({ flexDirection: "column", height: "100%", justifyContent: "center", alignItems: "center"})};
 `;
 
 const Left = styled.div`
@@ -20,21 +22,27 @@ const Left = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({ justifyContent: "center", alignItems: "center" })}
 `;
 
 const Right = styled.div`
     flex: 1;
+    padding: 20px
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+    ${mobile({ textAlign: "center"})}
+`;
 
 const Desc = styled.p`
     margin: 20px 0px;
+    ${mobile({ textAlign: "center"})};
 `;
 
 const SocialIconContainer = styled.div`
     display: flex;
     align-items: center;
+    ${mobile({ justifyContent: "center"})};
 `;
 
 const SocialIcon = styled.div`

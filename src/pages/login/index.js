@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import {BgLogin} from '../../assets';
+import { mobile } from '../../responsive';
 
 const Container = styled.div`
     width: 100vw;
@@ -11,10 +12,6 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(${BgLogin}) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 `;
 
 const Wrapper = styled.div`
@@ -22,6 +19,7 @@ const Wrapper = styled.div`
     padding: 20px;
     background-color: white;
     border-radius: 15px;
+    ${mobile({ width: "80%", margin: "0px 10px"})}
 `;
 
 const Title = styled.h1`

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { BgRegister } from '../../assets';
+import { mobile } from '../../responsive';
 
 const Container = styled.div`
     width: 100vw;
@@ -18,6 +19,7 @@ const Wrapper = styled.div`
     padding: 20px;
     background-color: white;
     border-radius: 15px;
+    ${mobile({ width: "80%", margin: "0px 10px", height: "100%"})}
 `;
 
 const Title = styled.h1`

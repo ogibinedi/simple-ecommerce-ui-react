@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const Container = styled.div`
-    margin-top: 60px;
     background-color: teal;
     padding: 5px;
     height: 30px;
@@ -11,14 +10,6 @@ const Container = styled.div`
     font-size: 14px;
     color: white;
     font-weight: 500;
-    
-
-    @media screen and (min-width: 480px) {
-       width: 100%;
-    }
-    @media screen and (max-width: 768px) {
-        width: 100%;
-    }
 `;
 
 const Announcement = () => {

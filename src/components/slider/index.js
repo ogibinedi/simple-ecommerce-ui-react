@@ -2,31 +2,15 @@ import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@mui/icons-materi
 import { useState } from 'react';
 import styled from 'styled-components';
 import { sliderItems } from '../../assets/data';
+import { mobile } from '../../responsive';
 
 const Container = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     position: relative;
     overflow: hidden;
-    @media screen and (max-width: 480px) {
-        display: flex;
-        flex: 1;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    @media screen and (max-width: 768px) {
-        display: flex;
-        flex: 1;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    @media screen and (max-width: 820px) {
-        display: flex;
-        flex: 1;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
+    ${mobile({ display: "none" })};
 `;
 
 const WrapperArrow = styled.div`
@@ -69,7 +53,9 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 `;
 
 const InfoContainer = styled.div`

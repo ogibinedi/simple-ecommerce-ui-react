@@ -18,21 +18,21 @@ export const sliderItems = [
         img: Slide1,
         title: 'BIG SALE 50%',
         desc: 'Macam macam Jaket Kulit Jangan Sampai Kehabisan Buruan Mampir Kesini Banyak Diskon Menunggu Anda!',
-        bg: 'f5fafd'
+        bg: 'FF8F79'
     },
     {
         id: 2,
         img: Slide2,
         title: 'BIG SALE 50%',
         desc: 'Berbagai Macam Digital Camera Jangan Sampai Kehabisan Buruan Mampir Kesini Banyak Diskon Menunggu Anda!',
-        bg: 'fcf1ed'
+        bg: 'E4DCE9'
     },
     {
         id: 3,
         img: Slide3,
         title: 'BIG SALE 50%',
         desc: 'Berbagai Macam Sneaker Jangan Sampai Kehabisan Buruan Mampir Kesini Banyak Diskon Menunggu Anda!',
-        bg: 'f5fefc'
+        bg: 'B8AFB6'
     }
 ];
 

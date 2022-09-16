@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Badge } from "@mui/material";
 import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import { mobile } from "../../responsive";
 
 const Wrapper = styled.div`
     display: flex;
@@ -22,6 +23,7 @@ const SearchContainer = styled.div`
     align-items: center;
     margin-left: 25px;
     padding: 5px;
+    ${mobile({ display: "none" })};
 `;
 
 const Input = styled.input`
@@ -43,11 +45,14 @@ const Center = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    ${mobile({ display: "none" })};
 `;
 
 const Logo = styled.h1`
-    font-weight: bold;
+    font-weight: 300;
+    font-size: 20px;
     cursor: pointer;
+    ${mobile({ fontSize: "14px", paddingTop: "5px" })};
 `;
 
 const Right = styled.div`
@@ -55,6 +60,7 @@ const Right = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    ${mobile({ alignItems: "center", justifyContent: "center", paddingTop: "5px" })};
 `
 
 const MenuItem = styled.div`
@@ -67,28 +73,7 @@ const Container = styled.div`
     height: 60px;
     background-color: darkblue;
     color: white;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    @media screen and (max-width: 480px) {
-        ${Left} {
-            display: none;
-        }
-        ${Right} {
-            display: none;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        ${Left} {
-            display: none;
-        }
-    }
-    @media screen and (max-width: 820px) {
-        ${Left} {
-            display: none;
-        }
-    }
+    ${mobile({ height: "50px" })};
 `;
 
 const Navbar = () => {
@@ -97,7 +82,7 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <Left>
-                <Logo onClick={() => navigation('/')}>WeCommerce</Logo>
+                <Logo onClick={() => navigation('/')}>WE-COMMERCE</Logo>
                 <SearchContainer>
                     <Input />
                     <Search style={{ color: "grey", fontSize: "16px"}} />
