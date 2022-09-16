@@ -18,4 +18,4 @@ Proses Belajar Ini Bersumber dari Channel youtube Lama Dev. Teman-teman bisa men
 ## Demo Aplikasi
 
 Bagi teman-teman yang ingin melihat demo websitenya secara live silahkan bisa kunjungi tautan dibawah ini:
-[WebCommerce UI](https://ogicommerce.netlify.app)
+[WebCommerce UI](https://demouireactapp.netlify.app/)
